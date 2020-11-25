@@ -1,7 +1,7 @@
 {
   "description"     : "========  CWASA installation configuration data  ========",
 
-  "jasBase"         : "http://vhg.cmp.uea.ac.uk/tech/jas/vhg2017/",
+  "jasBase"         : "https://ambitious-plant-0be46bb10.azurestaticapps.net/",
   "jasVersionTag"   : "vhg2017",
 
   "sigmlBase"       : "sigml",
