@@ -19,6 +19,8 @@
             $("#loading").hide();
             clearInterval(loadingTout);
             console.log("Avatar loaded successfully !");
+            startDictation();
+            console.log("not done");
         }
     }, 1000);
 
@@ -95,7 +97,7 @@
                 console.log('Speech: ' + e.results[0][0].transcript);
 
                 let speech = e.results[0][0].transcript;
-                // let parsedSpeech = getParsedText(speech);
+                speech = getParsedText(speech);
 
                 clickme(speech);
 
@@ -267,6 +269,7 @@
                     clearInterval(int);
                     finalHint = $("#inputText").val();
                     $("#textHint").html(finalHint);
+                    startDictation();
                 }
             } else {
                 if(playerAvailableToPlay) {

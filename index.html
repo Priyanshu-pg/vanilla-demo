@@ -105,24 +105,23 @@
             <div class="row text-center"><span style="background-color:#ebf8a4; padding: 8px 20px;">Loading ... Please wait...</span></div>
         </div>
 
-
-
         <!-- left side division starts here -->
         <div style="position: absolute;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);width: 20%;padding:15px;">
 
             <form id="inputText">
-                <input id="dom-target" type="text" name="firstname" hidden><br>
+                <!--<input id="dom-target" type="text" name="firstname"><br>-->
+
             </form>
 
             <div class="row center" onload="startDictation()">
-                <div id="speech_recognizer">
+                <!--<div id="speech_recognizer">
                    <a id="speech_recognizer_link" onclick="startDictation()" style="height: 45%;" class="btn-floating btn-large waves-effect red">
                        <i class="large material-icons">mic</i>
                    </a>
                    <p class="text-center" style="margin-top: 15px; font-size: 20px;" onload="startDictation()">Click to Speak</p>
-                </div>
+                </div>-->
                 <div id="speech_loader">
-                    <img src="images/speechloader.gif"  style="width: 80%; height:80%;">
+                    <img src="images/Listening.gif"  style="width: 80%; height:80%;">
                     <p class="text-center"  style=" font-size: 18px;">Listening...</p>
                 </div>
                 <div id="loader">
@@ -174,16 +173,16 @@
         </div>
         <div style="width: 20%;right: 3%;position: absolute;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);">
             <div id="speech" style="margin-top:10px; border-top:3px solid black;">
-                <br><strong><span id="speech_text" style="font-size: 18px; color: grey;">Speech</span></strong></br>
-                <div><span id="speech_"></span></div>
+                <br><strong><span id="speech_text" style="font-size: 18px; color: white;">Speech</span></strong></br>
+                <div><span id="speech_" style="font-size: 18px; color: white;"></span></div>
             </div>
             <div class="row">
             </div>
             <br/>
 
             <div style="margin-top:10px; border-top:3px solid black;">
-                <br><strong><span id="isl_text" style="font-size: 18px; color: grey;">Indian Sign Language</span></strong></br>
-                <div id="isl"></div>
+                <br><strong><span id="isl_text" style="font-size: 18px; color: white;">Indian Sign Language</span></strong></br>
+                <div id="isl" style="font-size: 18px; color: white;"></div>
             </div>
             <br/>
             <div id="debuggercontainer" style="margin-top:10px; border-top:3px solid black;" hidden>
